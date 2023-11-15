@@ -49,7 +49,7 @@ DROP TABLE IF EXISTS question_likes;
 CREATE TABLE question_likes (
 	id INTEGER PRIMARY KEY,
 	user_id  INTEGER NOT NULL,
-	question_id INTEGER NOT NULL,
+	question_id INTEGER NOT NULL
 
 	FOREIGN KEY (user_id) REFERENCES users(id),
 	FOREIGN KEY (question_id) REFERENCES questions(id)
